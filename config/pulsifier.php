@@ -1,7 +1,5 @@
 <?php 
 
 return [
-
-    'model_path' => "Http\\Model\\s"
-    
+    'model_path' => "Models"
 ];
