@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b98978924eb5742874ccf16347a6634b",
+    "content-hash": "7759431e303e2d722a264a8a991a9e84",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -117,148 +117,6 @@
                 }
             ],
             "time": "2021-01-20T22:51:39+00:00"
-        },
-        {
-            "name": "cartalyst/sentinel",
-            "version": "v5.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cartalyst/sentinel.git",
-                "reference": "6f641c0c6fda3627a6aee9d1cd3c409e73e4fd0d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cartalyst/sentinel/zipball/6f641c0c6fda3627a6aee9d1cd3c409e73e4fd0d",
-                "reference": "6f641c0c6fda3627a6aee9d1cd3c409e73e4fd0d",
-                "shasum": ""
-            },
-            "require": {
-                "cartalyst/support": "^5.0",
-                "illuminate/support": "^8.0",
-                "php": "^7.3 || ^8.0"
-            },
-            "require-dev": {
-                "cartalyst/php-cs-fixer-config": "^1.0",
-                "illuminate/cookie": "^8.0",
-                "illuminate/database": "^8.0",
-                "illuminate/events": "^8.0",
-                "illuminate/http": "^8.0",
-                "illuminate/session": "^8.0",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^9.0"
-            },
-            "suggest": {
-                "illuminate/database": "By default, Sentinel utilizes the powerful Illuminate database layer.",
-                "illuminate/events": "To hook into various events across Sentinel, we recommend using Illuminate's event dispatcher.",
-                "symfony/http-foundation": "Required for native implementations."
-            },
-            "type": "library",
-            "extra": {
-                "component": "package",
-                "branch-alias": {
-                    "dev-master": "5.0.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Cartalyst\\Sentinel\\Laravel\\SentinelServiceProvider"
-                    ],
-                    "aliases": {
-                        "Activation": "Cartalyst\\Sentinel\\Laravel\\Facades\\Activation",
-                        "Reminder": "Cartalyst\\Sentinel\\Laravel\\Facades\\Reminder",
-                        "Sentinel": "Cartalyst\\Sentinel\\Laravel\\Facades\\Sentinel"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Cartalyst\\Sentinel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Cartalyst LLC",
-                    "email": "help@cartalyst.com",
-                    "homepage": "https://cartalyst.com"
-                }
-            ],
-            "description": "PHP 7.3+ Fully-featured Authentication & Authorization System",
-            "keywords": [
-                "auth",
-                "cartalyst",
-                "laravel",
-                "php",
-                "security"
-            ],
-            "support": {
-                "issues": "https://github.com/cartalyst/sentinel/issues",
-                "source": "https://github.com/cartalyst/sentinel/tree/v5.1.0"
-            },
-            "time": "2020-12-22T19:31:31+00:00"
-        },
-        {
-            "name": "cartalyst/support",
-            "version": "v5.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cartalyst/support.git",
-                "reference": "1bf18efdc7e1c7bd4adabdbccfac48ce0fa946fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cartalyst/support/zipball/1bf18efdc7e1c7bd4adabdbccfac48ce0fa946fe",
-                "reference": "1bf18efdc7e1c7bd4adabdbccfac48ce0fa946fe",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3 || ^8.0"
-            },
-            "require-dev": {
-                "cartalyst/php-cs-fixer-config": "^1.0",
-                "illuminate/mail": "^8.0",
-                "illuminate/validation": "^8.0",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^9.0",
-                "symfony/translation": "^5.1"
-            },
-            "type": "library",
-            "extra": {
-                "component": "package",
-                "branch-alias": {
-                    "dev-master": "5.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Cartalyst\\Support\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Cartalyst LLC",
-                    "email": "help@cartalyst.com",
-                    "homepage": "https://cartalyst.com"
-                }
-            ],
-            "description": "Support helpers.",
-            "keywords": [
-                "cartalyst",
-                "helper",
-                "laravel",
-                "support"
-            ],
-            "support": {
-                "issues": "https://github.com/cartalyst/support/issues",
-                "source": "https://github.com/cartalyst/support/tree/v5.1.2"
-            },
-            "time": "2021-03-01T17:41:34+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1000,16 +858,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.41.0",
+            "version": "v8.42.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "05417155d886df8710e55c84e12622b52d83c47c"
+                "reference": "55b886683e0a019bcad0d9d70bb781a3de1a6755"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/05417155d886df8710e55c84e12622b52d83c47c",
-                "reference": "05417155d886df8710e55c84e12622b52d83c47c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/55b886683e0a019bcad0d9d70bb781a3de1a6755",
+                "reference": "55b886683e0a019bcad0d9d70bb781a3de1a6755",
                 "shasum": ""
             },
             "require": {
@@ -1164,7 +1022,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-05-11T14:00:02+00:00"
+            "time": "2021-05-18T15:37:44+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -5422,16 +5280,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.5.1",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "695f616c228c9df923a10282e4989feeae212c52"
+                "reference": "5d23474cd411b07f46980d05f9c38e7dc0d17460"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/695f616c228c9df923a10282e4989feeae212c52",
-                "reference": "695f616c228c9df923a10282e4989feeae212c52",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/5d23474cd411b07f46980d05f9c38e7dc0d17460",
+                "reference": "5d23474cd411b07f46980d05f9c38e7dc0d17460",
                 "shasum": ""
             },
             "require": {
@@ -5478,7 +5336,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-05-11T21:00:37+00:00"
+            "time": "2021-05-18T15:44:02+00:00"
         },
         {
             "name": "mockery/mockery",
