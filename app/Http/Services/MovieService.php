@@ -9,7 +9,7 @@ use App\Http\Services\BaseService;
 
 class MovieService extends BaseService
 {
-    public function __construct(Request $request, User $currentUser, Movie $movie,)
+    public function __construct(Request $request, User $currentUser, Movie $movie)
     {
         parent::__construct($movie, $request, $currentUser);
     }
