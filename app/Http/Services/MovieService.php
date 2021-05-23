@@ -39,7 +39,7 @@ class MovieService extends BaseService
 
         
 
-        $movie_model =  $this->model->create($movie);
+        return $this->model->create($movie);
 
         //create episode 
         // foreach($data['episodes'] as $episode) {
