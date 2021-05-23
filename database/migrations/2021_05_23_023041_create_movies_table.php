@@ -21,6 +21,7 @@ class CreateMoviesTable extends Migration
             $table->text('plot');
             $table->integer('year_released');
             $table->integer('country_id');
+            $table->text('banner');
             $table->timestamps();
         });
     }
