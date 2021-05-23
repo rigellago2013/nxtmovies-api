@@ -4,9 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Movie;
 use Illuminate\Http\Request;
+use App\Http\Services\MovieService;
 
 class MovieController extends Controller
 {
+    private $movieService;
+
+    public function __construct(MovieService $movieService)
+    {
+        $this->middleware('auth')->except(['index', 'store']);
+        $this->movieService = $movieService;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +22,7 @@ class MovieController extends Controller
      */
     public function index()
     {
-        //
+        return $this->movieService->paginate(15);
     }
 
     /**
@@ -22,9 +30,9 @@ class MovieController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -35,7 +43,8 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    
+        return $this->movieService->create($request);
     }
 
     /**

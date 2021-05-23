@@ -4,7 +4,7 @@ namespace App\Http\Services;
 
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
-use App\User;
+use App\Models\User;
 
 abstract class BaseService 
 {
@@ -50,7 +50,7 @@ abstract class BaseService
         return  $this->model->orderBy($column)
         ->get();
     }
-    public function create(array $request)
+    public function create( $request)
     {
         return  $this->model->create($request);
     }
@@ -117,5 +117,15 @@ abstract class BaseService
     public function delete($id)
     {
         return $this->model->delete($id);
+    }
+
+    public function paginate($count)
+    {
+        return $this->model->paginate($count);
+    }
+
+    public function store()
+    {
+    
     }
 }
